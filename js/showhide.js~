@@ -1,0 +1,9 @@
+function show(var elem)
+{
+	document.getElementById(elem).style.display = 'block';
+}
+
+function hide(var elem)
+{
+	document.getElementById(elem).style.display = 'none';
+}

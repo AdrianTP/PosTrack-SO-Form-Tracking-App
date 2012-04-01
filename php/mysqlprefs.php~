@@ -1,0 +1,64 @@
+<?php
+	
+	// Set MySQL connection
+	global $sql_host;
+	global $sql_user;
+	global $sql_pass;
+	$sql_host = 'localhost';
+	$sql_user = 'root';
+	$sql_pass = 'toor';
+	
+	// Database names to create
+	global $sql_db_name1;
+	$sql_db_name1 = 'pttsoform'; 
+	
+	// Table names to create
+	global $sql_table_name1;
+	$sql_table_name1 = 'orders';
+	
+	// Construction of MySQL CREATE query
+	global $create_query;
+	$create_query1 = 'CREATE TABLE ' . $sql_table_name1 . 
+	'(
+		soID int NOT NULL AUTO_INCREMENT, 
+		PRIMARY KEY(soID),
+		sales int(1),
+		service int(1),
+		shipping int(1),
+		sonumber varchar(31),
+		startdate date,
+		custname varchar(31),
+		custschool varchar(31),
+		custline3 varchar(31),
+		unitlocname varchar(31),
+		unitlocstreet varchar(31),
+		unitloczip varchar(31),
+		division varchar(1),
+		sapnumber varchar(31),
+		ordertakenby varchar(31),
+		employeenumber int(3),
+		worktobedone varchar(127),
+		itemtoship1 varchar(31),
+		itembilling1 int(1),
+		itemtoship2 varchar(31),
+		itembilling2 int(1),
+		itemtoship3 varchar(31),
+		itembilling3 int(1),
+		itemtoship4 varchar(31),
+		itembilling4 int(1),
+		itemtoship5 varchar(31),
+		itembilling5 int(1),
+		itemtoship6 varchar(31),
+		itembilling6 int(1),
+		itemtoship7 varchar(31),
+		itembilling7 int(1),
+		itemtoship8 varchar(31),
+		itembilling8 int(1),
+		laborname varchar(31),
+		laborhours int(1),
+		laborbilling int(1),
+		completedname varchar(31),
+		datecompleted date
+	)';
+	
+?>
